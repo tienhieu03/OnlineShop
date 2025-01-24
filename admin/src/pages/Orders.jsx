@@ -104,8 +104,8 @@ const Orders = ({ token }) => {
               <p>Date: {new Date(order.date).toLocaleDateString()}</p>
             </div>
             <p className="text-sm sm:text-[15px]">
-              {order.amount}
               {currency}
+              {order.amount}
             </p>
             <select
               onChange={(event) => statusHandler(event, order._id)}
